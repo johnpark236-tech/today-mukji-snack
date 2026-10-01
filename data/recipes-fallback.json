@@ -1,0 +1,859 @@
+{
+  "recipes": [
+    {
+      "id": "street-toast",
+      "name": "길거리 계란토스트",
+      "description": "양배추와 계란을 넣어 달콤짭짤하게 만드는 든든한 간식이에요.",
+      "category": "토스트",
+      "difficulty": "쉬움",
+      "timeMinutes": 15,
+      "servings": 1,
+      "emoji": "🥪",
+      "tags": [
+        "토스트",
+        "계란",
+        "15분"
+      ],
+      "ingredients": [
+        {
+          "id": "bread",
+          "name": "식빵",
+          "amount": "2장",
+          "optional": false
+        },
+        {
+          "id": "egg",
+          "name": "계란",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "cabbage",
+          "name": "양배추",
+          "amount": "한 줌",
+          "optional": false
+        },
+        {
+          "id": "carrot",
+          "name": "당근",
+          "amount": "2큰술",
+          "optional": true
+        },
+        {
+          "id": "cheese",
+          "name": "슬라이스 치즈",
+          "amount": "1장",
+          "optional": true
+        },
+        {
+          "id": "ketchup",
+          "name": "케첩",
+          "amount": "1큰술",
+          "optional": false
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "양배추와 당근을 가늘게 채 썰어주세요.",
+          "tip": "채소를 가늘게 썰면 계란과 잘 붙어요."
+        },
+        {
+          "order": 2,
+          "text": "계란을 풀어 채소와 소금 한 꼬집을 섞어주세요.",
+          "tip": "젓가락으로 20초 정도만 섞어요."
+        },
+        {
+          "order": 3,
+          "text": "팬에 식용유를 두르고 계란 채소 반죽을 중불에서 앞뒤로 2분씩 익혀주세요.",
+          "tip": "계란은 속까지 완전히 익혀주세요."
+        },
+        {
+          "order": 4,
+          "text": "식빵을 팬에서 앞뒤로 1분씩 노릇하게 구워주세요.",
+          "tip": "버터를 조금 바르면 더 고소해요."
+        },
+        {
+          "order": 5,
+          "text": "식빵 사이에 계란, 치즈, 케첩을 넣고 반으로 잘라주세요.",
+          "tip": "설탕을 아주 조금 뿌리면 길거리 토스트 맛이 나요."
+        }
+      ],
+      "tips": [
+        "따뜻할 때 바로 먹으면 가장 맛있어요."
+      ],
+      "image": "assets/snacks/street-toast.svg"
+    },
+    {
+      "id": "french-toast",
+      "name": "폭신한 프렌치토스트",
+      "description": "우유와 계란을 머금은 식빵을 부드럽게 구운 달콤한 간식이에요.",
+      "category": "토스트",
+      "difficulty": "쉬움",
+      "timeMinutes": 12,
+      "servings": 1,
+      "emoji": "🍞",
+      "tags": [
+        "식빵",
+        "달콤",
+        "초간단"
+      ],
+      "ingredients": [
+        {
+          "id": "bread",
+          "name": "식빵",
+          "amount": "2장",
+          "optional": false
+        },
+        {
+          "id": "egg",
+          "name": "계란",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "milk",
+          "name": "우유",
+          "amount": "80ml",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "butter",
+          "name": "버터",
+          "amount": "1작은술",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "그릇에 계란, 우유, 설탕을 넣고 고르게 섞어주세요.",
+          "tip": "거품이 많이 나지 않게 천천히 섞어요."
+        },
+        {
+          "order": 2,
+          "text": "식빵을 계란물에 앞뒤로 20초씩 적셔주세요.",
+          "tip": "너무 오래 담그면 식빵이 찢어질 수 있어요."
+        },
+        {
+          "order": 3,
+          "text": "약불로 달군 팬에 버터를 녹이고 식빵을 올려주세요.",
+          "tip": "약불에서 천천히 익혀야 속까지 부드러워요."
+        },
+        {
+          "order": 4,
+          "text": "앞뒤로 3분씩 익혀 계란이 완전히 익으면 꺼내주세요.",
+          "tip": "중앙까지 촉촉하게 익었는지 확인하세요."
+        }
+      ],
+      "tips": [
+        "바나나나 꿀을 곁들이면 좋아요."
+      ],
+      "image": "assets/snacks/french-toast.svg"
+    },
+    {
+      "id": "tteok-kkochi",
+      "name": "매콤달콤 떡꼬치",
+      "description": "쫄깃한 떡에 매콤달콤한 양념을 바른 추억의 분식 간식이에요.",
+      "category": "분식",
+      "difficulty": "쉬움",
+      "timeMinutes": 15,
+      "servings": 2,
+      "emoji": "🍢",
+      "tags": [
+        "떡",
+        "분식",
+        "매콤달콤"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-cake",
+          "name": "떡볶이 떡",
+          "amount": "20개",
+          "optional": false
+        },
+        {
+          "id": "gochujang",
+          "name": "고추장",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "ketchup",
+          "name": "케첩",
+          "amount": "2큰술",
+          "optional": false
+        },
+        {
+          "id": "syrup",
+          "name": "올리고당",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "sesame",
+          "name": "깨",
+          "amount": "약간",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "딱딱한 떡은 따뜻한 물에 3분 담가 부드럽게 해주세요.",
+          "tip": "말랑한 떡은 바로 사용해도 돼요."
+        },
+        {
+          "order": 2,
+          "text": "떡을 꼬치에 4개씩 꽂아주세요.",
+          "tip": "꼬치 끝이 뾰족하니 손을 조심하세요."
+        },
+        {
+          "order": 3,
+          "text": "팬에 기름을 조금 두르고 떡을 중불에서 앞뒤로 2분씩 구워주세요.",
+          "tip": "떡 표면이 살짝 노릇해지면 돼요."
+        },
+        {
+          "order": 4,
+          "text": "고추장, 케첩, 올리고당과 물 1큰술을 섞어 약불에서 1분 끓여주세요.",
+          "tip": "양념이 튀지 않게 약불을 사용해요."
+        },
+        {
+          "order": 5,
+          "text": "구운 떡에 양념을 골고루 바르고 깨를 뿌려주세요.",
+          "tip": "어린이가 먹는다면 고추장 양을 줄여요."
+        }
+      ],
+      "tips": [
+        "치즈가루를 살짝 뿌려도 잘 어울려요."
+      ],
+      "image": "assets/snacks/tteok-kkochi.svg"
+    },
+    {
+      "id": "tteokbokki-cup",
+      "name": "컵 떡볶이",
+      "description": "한두 명이 가볍게 즐기기 좋은 빠른 떡볶이 간식이에요.",
+      "category": "분식",
+      "difficulty": "쉬움",
+      "timeMinutes": 20,
+      "servings": 2,
+      "emoji": "🌶️",
+      "tags": [
+        "떡볶이",
+        "분식",
+        "매콤"
+      ],
+      "ingredients": [
+        {
+          "id": "rice-cake",
+          "name": "떡볶이 떡",
+          "amount": "250g",
+          "optional": false
+        },
+        {
+          "id": "fish-cake",
+          "name": "어묵",
+          "amount": "2장",
+          "optional": true
+        },
+        {
+          "id": "gochujang",
+          "name": "고추장",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "chili-powder",
+          "name": "고춧가루",
+          "amount": "1작은술",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "1큰술",
+          "optional": false
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "떡은 물에 한번 헹구고 어묵은 한입 크기로 잘라주세요.",
+          "tip": "떡이 딱딱하면 미지근한 물에 5분 담가요."
+        },
+        {
+          "order": 2,
+          "text": "냄비에 물 400ml, 고추장, 고춧가루, 설탕을 넣고 끓여주세요.",
+          "tip": "양념을 먼저 풀어야 덩어리가 생기지 않아요."
+        },
+        {
+          "order": 3,
+          "text": "물이 끓으면 떡과 어묵을 넣고 중불에서 8분 끓여주세요.",
+          "tip": "바닥에 붙지 않게 중간중간 저어요."
+        },
+        {
+          "order": 4,
+          "text": "국물이 걸쭉해지고 떡이 말랑해지면 불을 꺼주세요.",
+          "tip": "너무 졸면 물을 2큰술 추가해요."
+        }
+      ],
+      "tips": [
+        "삶은 계란을 곁들이면 든든해요."
+      ],
+      "image": "assets/snacks/tteokbokki-cup.svg"
+    },
+    {
+      "id": "corn-cheese",
+      "name": "전자레인지 콘치즈",
+      "description": "옥수수와 치즈만 있으면 10분 안에 만드는 고소한 간식이에요.",
+      "category": "전자레인지",
+      "difficulty": "아주 쉬움",
+      "timeMinutes": 8,
+      "servings": 1,
+      "emoji": "🌽",
+      "tags": [
+        "옥수수",
+        "치즈",
+        "전자레인지"
+      ],
+      "ingredients": [
+        {
+          "id": "corn",
+          "name": "통조림 옥수수",
+          "amount": "150g",
+          "optional": false
+        },
+        {
+          "id": "cheese",
+          "name": "모차렐라 치즈",
+          "amount": "70g",
+          "optional": false
+        },
+        {
+          "id": "mayonnaise",
+          "name": "마요네즈",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "1작은술",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "옥수수의 물기를 충분히 빼주세요.",
+          "tip": "물기가 많으면 콘치즈가 묽어져요."
+        },
+        {
+          "order": 2,
+          "text": "전자레인지용 그릇에 옥수수, 마요네즈, 설탕을 섞어주세요.",
+          "tip": "전자레인지 사용 가능한 그릇인지 확인하세요."
+        },
+        {
+          "order": 3,
+          "text": "모차렐라 치즈를 고르게 덮어주세요.",
+          "tip": "치즈를 너무 두껍게 올리지 않아도 돼요."
+        },
+        {
+          "order": 4,
+          "text": "전자레인지에서 1분 30초 돌리고 치즈가 덜 녹았으면 20초씩 추가해주세요.",
+          "tip": "그릇이 매우 뜨거울 수 있으니 장갑을 사용하세요."
+        }
+      ],
+      "tips": [
+        "파슬리나 후추를 조금 뿌리면 향이 좋아요."
+      ],
+      "image": "assets/snacks/corn-cheese.svg"
+    },
+    {
+      "id": "sweet-potato-matang",
+      "name": "고구마 맛탕",
+      "description": "겉은 바삭하고 속은 포슬한 고구마에 달콤한 코팅을 입힌 간식이에요.",
+      "category": "달콤",
+      "difficulty": "보통",
+      "timeMinutes": 20,
+      "servings": 2,
+      "emoji": "🍠",
+      "tags": [
+        "고구마",
+        "달콤",
+        "간식"
+      ],
+      "ingredients": [
+        {
+          "id": "sweet-potato",
+          "name": "고구마",
+          "amount": "2개",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "2큰술",
+          "optional": false
+        },
+        {
+          "id": "syrup",
+          "name": "올리고당",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "sesame",
+          "name": "검은깨",
+          "amount": "약간",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "고구마는 깨끗이 씻어 한입 크기로 썰어주세요.",
+          "tip": "껍질은 취향에 따라 남겨도 좋아요."
+        },
+        {
+          "order": 2,
+          "text": "고구마를 물에 3분 담근 뒤 물기를 완전히 닦아주세요.",
+          "tip": "물기가 남으면 기름이 튈 수 있어요."
+        },
+        {
+          "order": 3,
+          "text": "팬에 식용유를 넉넉히 두르고 중불에서 고구마를 8분 굴려가며 익혀주세요.",
+          "tip": "젓가락이 들어가면 속까지 익은 거예요."
+        },
+        {
+          "order": 4,
+          "text": "다른 팬에 설탕, 올리고당, 물 1큰술을 넣고 약불에서 녹여주세요.",
+          "tip": "설탕 시럽은 매우 뜨거우니 손에 닿지 않게 조심하세요."
+        },
+        {
+          "order": 5,
+          "text": "고구마를 시럽에 빠르게 버무리고 검은깨를 뿌려주세요.",
+          "tip": "서로 붙지 않게 접시에 펼쳐 식혀요."
+        }
+      ],
+      "tips": [
+        "완전히 식으면 겉면이 더 바삭해져요."
+      ],
+      "image": "assets/snacks/sweet-potato-matang.svg"
+    },
+    {
+      "id": "butter-potato",
+      "name": "버터 감자구이",
+      "description": "팬에 노릇하게 구운 감자에 버터 향을 더한 짭짤한 간식이에요.",
+      "category": "간편",
+      "difficulty": "쉬움",
+      "timeMinutes": 15,
+      "servings": 2,
+      "emoji": "🥔",
+      "tags": [
+        "감자",
+        "버터",
+        "간편"
+      ],
+      "ingredients": [
+        {
+          "id": "potato",
+          "name": "감자",
+          "amount": "2개",
+          "optional": false
+        },
+        {
+          "id": "butter",
+          "name": "버터",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "salt",
+          "name": "소금",
+          "amount": "2꼬집",
+          "optional": false
+        },
+        {
+          "id": "parsley",
+          "name": "파슬리",
+          "amount": "약간",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "감자는 깨끗이 씻고 1cm 두께로 썰어주세요.",
+          "tip": "두께를 비슷하게 맞추면 고르게 익어요."
+        },
+        {
+          "order": 2,
+          "text": "전자레인지용 그릇에 감자를 담아 3분 익혀주세요.",
+          "tip": "그릇이 뜨거워질 수 있어요."
+        },
+        {
+          "order": 3,
+          "text": "팬에 버터를 녹이고 감자를 중불에서 앞뒤로 3분씩 구워주세요.",
+          "tip": "노릇해질 때까지 너무 자주 뒤집지 않아요."
+        },
+        {
+          "order": 4,
+          "text": "소금과 파슬리를 뿌리고 불을 꺼주세요.",
+          "tip": "치즈가루를 뿌려도 맛있어요."
+        }
+      ],
+      "tips": [
+        "케첩이나 요거트 소스를 곁들여도 좋아요."
+      ],
+      "image": "assets/snacks/butter-potato.svg"
+    },
+    {
+      "id": "banana-pancake",
+      "name": "바나나 팬케이크",
+      "description": "잘 익은 바나나로 자연스러운 단맛을 낸 부드러운 팬케이크예요.",
+      "category": "디저트",
+      "difficulty": "쉬움",
+      "timeMinutes": 15,
+      "servings": 2,
+      "emoji": "🥞",
+      "tags": [
+        "바나나",
+        "팬케이크",
+        "디저트"
+      ],
+      "ingredients": [
+        {
+          "id": "banana",
+          "name": "바나나",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "egg",
+          "name": "계란",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "flour",
+          "name": "밀가루",
+          "amount": "5큰술",
+          "optional": false
+        },
+        {
+          "id": "milk",
+          "name": "우유",
+          "amount": "3큰술",
+          "optional": false
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "바나나를 그릇에 넣고 포크로 곱게 으깨주세요.",
+          "tip": "검은 점이 생긴 잘 익은 바나나가 달아요."
+        },
+        {
+          "order": 2,
+          "text": "계란과 우유를 넣고 고르게 섞어주세요.",
+          "tip": "계란 껍데기가 들어가지 않았는지 확인해요."
+        },
+        {
+          "order": 3,
+          "text": "밀가루를 넣고 가루가 보이지 않을 정도로만 섞어주세요.",
+          "tip": "너무 오래 섞으면 식감이 질겨질 수 있어요."
+        },
+        {
+          "order": 4,
+          "text": "약불로 달군 팬에 반죽을 한 국자씩 올리고 앞뒤로 2분씩 익혀주세요.",
+          "tip": "계란이 들어가므로 가운데까지 충분히 익혀주세요."
+        }
+      ],
+      "tips": [
+        "꿀이나 견과류를 곁들이면 좋아요."
+      ],
+      "image": "assets/snacks/banana-pancake.svg"
+    },
+    {
+      "id": "fruit-yogurt",
+      "name": "과일 요거트볼",
+      "description": "제철 과일과 요거트를 담아 5분 만에 만드는 산뜻한 간식이에요.",
+      "category": "건강",
+      "difficulty": "아주 쉬움",
+      "timeMinutes": 5,
+      "servings": 1,
+      "emoji": "🍓",
+      "tags": [
+        "과일",
+        "요거트",
+        "5분"
+      ],
+      "ingredients": [
+        {
+          "id": "yogurt",
+          "name": "플레인 요거트",
+          "amount": "150g",
+          "optional": false
+        },
+        {
+          "id": "banana",
+          "name": "바나나",
+          "amount": "1/2개",
+          "optional": false
+        },
+        {
+          "id": "strawberry",
+          "name": "딸기",
+          "amount": "4개",
+          "optional": true
+        },
+        {
+          "id": "granola",
+          "name": "그래놀라",
+          "amount": "3큰술",
+          "optional": true
+        },
+        {
+          "id": "honey",
+          "name": "꿀",
+          "amount": "1작은술",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "과일은 흐르는 물에 깨끗이 씻어 물기를 닦아주세요.",
+          "tip": "딸기는 꼭지를 떼기 전에 씻으면 물이 덜 들어가요."
+        },
+        {
+          "order": 2,
+          "text": "바나나와 딸기를 한입 크기로 잘라주세요.",
+          "tip": "아이와 함께 만들 때 칼 사용은 어른이 도와주세요."
+        },
+        {
+          "order": 3,
+          "text": "그릇에 요거트를 담고 과일과 그래놀라를 올려주세요.",
+          "tip": "바삭한 그래놀라는 먹기 직전에 넣어요."
+        },
+        {
+          "order": 4,
+          "text": "원하면 꿀을 한 작은술 둘러 마무리하세요.",
+          "tip": "한 살 미만 영아에게는 꿀을 주지 마세요."
+        }
+      ],
+      "tips": [
+        "냉동 블루베리를 조금 넣어도 상큼해요."
+      ],
+      "image": "assets/snacks/fruit-yogurt.svg"
+    },
+    {
+      "id": "ramen-ttang",
+      "name": "바삭 라면땅",
+      "description": "라면을 바삭하게 구워 달콤짭짤하게 즐기는 초간단 간식이에요.",
+      "category": "바삭",
+      "difficulty": "아주 쉬움",
+      "timeMinutes": 10,
+      "servings": 2,
+      "emoji": "🍜",
+      "tags": [
+        "라면",
+        "바삭",
+        "10분"
+      ],
+      "ingredients": [
+        {
+          "id": "ramen",
+          "name": "라면사리",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "ramen-soup",
+          "name": "라면수프",
+          "amount": "1/3봉",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "라면사리를 먹기 좋은 크기로 조심스럽게 부숴주세요.",
+          "tip": "너무 잘게 부수지 않으면 먹기 편해요."
+        },
+        {
+          "order": 2,
+          "text": "마른 팬에 라면을 넣고 약불에서 5분 뒤집어가며 구워주세요.",
+          "tip": "타기 쉬우니 약불을 유지해요."
+        },
+        {
+          "order": 3,
+          "text": "불을 끄고 설탕과 라면수프를 조금씩 뿌려 섞어주세요.",
+          "tip": "수프는 짤 수 있으니 처음에는 적게 넣어요."
+        },
+        {
+          "order": 4,
+          "text": "접시에 넓게 펼쳐 2분 식혀 바삭하게 만들어주세요.",
+          "tip": "뜨거울 때 바로 먹지 마세요."
+        }
+      ],
+      "tips": [
+        "계피가루를 아주 조금 뿌리면 색다른 맛이에요."
+      ],
+      "image": "assets/snacks/ramen-ttang.svg"
+    },
+    {
+      "id": "egg-bread",
+      "name": "컵 계란빵",
+      "description": "식빵과 계란을 컵에 담아 만드는 든든하고 따뜻한 간식이에요.",
+      "category": "전자레인지",
+      "difficulty": "쉬움",
+      "timeMinutes": 8,
+      "servings": 1,
+      "emoji": "🥚",
+      "tags": [
+        "계란",
+        "식빵",
+        "전자레인지"
+      ],
+      "ingredients": [
+        {
+          "id": "bread",
+          "name": "식빵",
+          "amount": "1장",
+          "optional": false
+        },
+        {
+          "id": "egg",
+          "name": "계란",
+          "amount": "1개",
+          "optional": false
+        },
+        {
+          "id": "cheese",
+          "name": "슬라이스 치즈",
+          "amount": "1/2장",
+          "optional": true
+        },
+        {
+          "id": "milk",
+          "name": "우유",
+          "amount": "1큰술",
+          "optional": true
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "전자레인지용 넓은 컵 안쪽에 식빵을 잘라 눌러 담아주세요.",
+          "tip": "금속 장식이 없는 컵을 사용하세요."
+        },
+        {
+          "order": 2,
+          "text": "식빵 위에 계란을 깨 넣고 노른자를 포크로 두세 번 찔러주세요.",
+          "tip": "노른자를 찌르지 않으면 전자레인지에서 터질 수 있어요."
+        },
+        {
+          "order": 3,
+          "text": "치즈와 우유를 조금 넣고 전자레인지에서 1분 20초 돌려주세요.",
+          "tip": "전자레인지 출력에 따라 시간이 달라질 수 있어요."
+        },
+        {
+          "order": 4,
+          "text": "계란 흰자와 노른자가 충분히 익었는지 확인하고 필요하면 15초씩 추가해주세요.",
+          "tip": "컵이 매우 뜨거울 수 있으니 장갑을 사용하세요."
+        }
+      ],
+      "tips": [
+        "케첩을 조금 곁들이면 좋아요."
+      ],
+      "image": "assets/snacks/egg-bread.svg"
+    },
+    {
+      "id": "choco-mug-cake",
+      "name": "초코 머그케이크",
+      "description": "머그컵 하나로 빠르게 만드는 촉촉한 초코 디저트예요.",
+      "category": "디저트",
+      "difficulty": "아주 쉬움",
+      "timeMinutes": 5,
+      "servings": 1,
+      "emoji": "🍫",
+      "tags": [
+        "초코",
+        "전자레인지",
+        "5분"
+      ],
+      "ingredients": [
+        {
+          "id": "flour",
+          "name": "밀가루",
+          "amount": "4큰술",
+          "optional": false
+        },
+        {
+          "id": "cocoa",
+          "name": "코코아가루",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "sugar",
+          "name": "설탕",
+          "amount": "1큰술",
+          "optional": false
+        },
+        {
+          "id": "milk",
+          "name": "우유",
+          "amount": "4큰술",
+          "optional": false
+        },
+        {
+          "id": "oil",
+          "name": "식용유",
+          "amount": "1큰술",
+          "optional": false
+        }
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "text": "큰 머그컵에 밀가루, 코코아가루, 설탕을 넣어 섞어주세요.",
+          "tip": "머그컵은 전자레인지 사용 가능한 제품을 사용하세요."
+        },
+        {
+          "order": 2,
+          "text": "우유와 식용유를 넣고 가루 덩어리가 거의 없어질 때까지 섞어주세요.",
+          "tip": "컵의 절반 이상 비워두어야 넘치지 않아요."
+        },
+        {
+          "order": 3,
+          "text": "전자레인지에서 1분 돌린 뒤 가운데가 덜 익었으면 15초씩 추가해주세요.",
+          "tip": "너무 오래 익히면 케이크가 딱딱해져요."
+        },
+        {
+          "order": 4,
+          "text": "1분 식힌 뒤 숟가락으로 떠서 드세요.",
+          "tip": "컵이 뜨거울 수 있으니 손잡이를 잡아주세요."
+        }
+      ],
+      "tips": [
+        "초콜릿 조각을 가운데 넣으면 더 진해져요."
+      ],
+      "image": "assets/snacks/choco-mug-cake.svg"
+    }
+  ]
+}
