@@ -1,0 +1,117 @@
+{
+  "version": 2,
+  "voice": "low",
+  "recipes": {
+    "street-toast": {
+      "steps": [
+        "assets/audio/street-toast/step-1.mp3",
+        "assets/audio/street-toast/step-2.mp3",
+        "assets/audio/street-toast/step-3.mp3",
+        "assets/audio/street-toast/step-4.mp3",
+        "assets/audio/street-toast/step-5.mp3"
+      ],
+      "full": "assets/audio/street-toast/full.mp3"
+    },
+    "french-toast": {
+      "steps": [
+        "assets/audio/french-toast/step-1.mp3",
+        "assets/audio/french-toast/step-2.mp3",
+        "assets/audio/french-toast/step-3.mp3",
+        "assets/audio/french-toast/step-4.mp3"
+      ],
+      "full": "assets/audio/french-toast/full.mp3"
+    },
+    "tteok-kkochi": {
+      "steps": [
+        "assets/audio/tteok-kkochi/step-1.mp3",
+        "assets/audio/tteok-kkochi/step-2.mp3",
+        "assets/audio/tteok-kkochi/step-3.mp3",
+        "assets/audio/tteok-kkochi/step-4.mp3",
+        "assets/audio/tteok-kkochi/step-5.mp3"
+      ],
+      "full": "assets/audio/tteok-kkochi/full.mp3"
+    },
+    "tteokbokki-cup": {
+      "steps": [
+        "assets/audio/tteokbokki-cup/step-1.mp3",
+        "assets/audio/tteokbokki-cup/step-2.mp3",
+        "assets/audio/tteokbokki-cup/step-3.mp3",
+        "assets/audio/tteokbokki-cup/step-4.mp3"
+      ],
+      "full": "assets/audio/tteokbokki-cup/full.mp3"
+    },
+    "corn-cheese": {
+      "steps": [
+        "assets/audio/corn-cheese/step-1.mp3",
+        "assets/audio/corn-cheese/step-2.mp3",
+        "assets/audio/corn-cheese/step-3.mp3",
+        "assets/audio/corn-cheese/step-4.mp3"
+      ],
+      "full": "assets/audio/corn-cheese/full.mp3"
+    },
+    "sweet-potato-matang": {
+      "steps": [
+        "assets/audio/sweet-potato-matang/step-1.mp3",
+        "assets/audio/sweet-potato-matang/step-2.mp3",
+        "assets/audio/sweet-potato-matang/step-3.mp3",
+        "assets/audio/sweet-potato-matang/step-4.mp3",
+        "assets/audio/sweet-potato-matang/step-5.mp3"
+      ],
+      "full": "assets/audio/sweet-potato-matang/full.mp3"
+    },
+    "butter-potato": {
+      "steps": [
+        "assets/audio/butter-potato/step-1.mp3",
+        "assets/audio/butter-potato/step-2.mp3",
+        "assets/audio/butter-potato/step-3.mp3",
+        "assets/audio/butter-potato/step-4.mp3"
+      ],
+      "full": "assets/audio/butter-potato/full.mp3"
+    },
+    "banana-pancake": {
+      "steps": [
+        "assets/audio/banana-pancake/step-1.mp3",
+        "assets/audio/banana-pancake/step-2.mp3",
+        "assets/audio/banana-pancake/step-3.mp3",
+        "assets/audio/banana-pancake/step-4.mp3"
+      ],
+      "full": "assets/audio/banana-pancake/full.mp3"
+    },
+    "fruit-yogurt": {
+      "steps": [
+        "assets/audio/fruit-yogurt/step-1.mp3",
+        "assets/audio/fruit-yogurt/step-2.mp3",
+        "assets/audio/fruit-yogurt/step-3.mp3",
+        "assets/audio/fruit-yogurt/step-4.mp3"
+      ],
+      "full": "assets/audio/fruit-yogurt/full.mp3"
+    },
+    "ramen-ttang": {
+      "steps": [
+        "assets/audio/ramen-ttang/step-1.mp3",
+        "assets/audio/ramen-ttang/step-2.mp3",
+        "assets/audio/ramen-ttang/step-3.mp3",
+        "assets/audio/ramen-ttang/step-4.mp3"
+      ],
+      "full": "assets/audio/ramen-ttang/full.mp3"
+    },
+    "egg-bread": {
+      "steps": [
+        "assets/audio/egg-bread/step-1.mp3",
+        "assets/audio/egg-bread/step-2.mp3",
+        "assets/audio/egg-bread/step-3.mp3",
+        "assets/audio/egg-bread/step-4.mp3"
+      ],
+      "full": "assets/audio/egg-bread/full.mp3"
+    },
+    "choco-mug-cake": {
+      "steps": [
+        "assets/audio/choco-mug-cake/step-1.mp3",
+        "assets/audio/choco-mug-cake/step-2.mp3",
+        "assets/audio/choco-mug-cake/step-3.mp3",
+        "assets/audio/choco-mug-cake/step-4.mp3"
+      ],
+      "full": "assets/audio/choco-mug-cake/full.mp3"
+    }
+  }
+}
