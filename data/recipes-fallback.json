@@ -155,7 +155,7 @@
       "tips": [
         "바나나나 꿀을 곁들이면 좋아요."
       ],
-      "image": "assets/snacks/french-toast.svg"
+      "image": "assets/snacks/generated/french-toast.webp"
     },
     {
       "id": "tteok-kkochi",
@@ -233,7 +233,7 @@
       "tips": [
         "치즈가루를 살짝 뿌려도 잘 어울려요."
       ],
-      "image": "assets/snacks/tteok-kkochi.svg"
+      "image": "assets/snacks/generated/tteok-kkochi.webp"
     },
     {
       "id": "tteokbokki-cup",
@@ -306,7 +306,7 @@
       "tips": [
         "삶은 계란을 곁들이면 든든해요."
       ],
-      "image": "assets/snacks/tteokbokki-cup.svg"
+      "image": "assets/snacks/generated/tteokbokki-cup.webp"
     },
     {
       "id": "corn-cheese",
@@ -780,7 +780,7 @@
       "tips": [
         "케첩을 조금 곁들이면 좋아요."
       ],
-      "image": "assets/snacks/egg-bread.svg"
+      "image": "assets/snacks/generated/egg-bread.webp"
     },
     {
       "id": "choco-mug-cake",

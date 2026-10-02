@@ -8,7 +8,7 @@
   let selectedIngredients = new Set();
   let cookStep = 0;
 
-  const recipeCard = recipe => `<a class="recipe-card" href="#/recipe/${recipe.id}"><div>${image(recipe)}</div><div class="card-body"><h3>${escapeHtml(recipe.name)}</h3><div class="card-meta"><span>⏱ ${recipe.timeMinutes}분</span><span>${escapeHtml(recipe.difficulty)}</span></div></div></a>`;
+  const recipeCard = recipe => `<a class="recipe-card" href="#/recipe/${recipe.id}"><div class="recipe-thumb">${image(recipe)}</div><div class="card-body"><h3>${escapeHtml(recipe.name)}</h3><div class="card-meta"><span>⏱ ${recipe.timeMinutes}분</span><span>${escapeHtml(recipe.difficulty)}</span></div></div></a>`;
 
   function homeView() {
     recommendation ||= recipes[Math.floor(Math.random() * recipes.length)];
