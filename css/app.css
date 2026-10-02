@@ -6,7 +6,7 @@
 .snack-subtitle{display:inline-block;margin-top:6px;padding:4px 12px;border-radius:999px;background:#fff0e8;color:#e94e1b;font-size:.62em;font-weight:900;letter-spacing:-.02em}
 
 
-/* Recipe image focus: one large recipe-specific visual only */
-.recipe-thumb{aspect-ratio:4/3;min-height:0;background:transparent}
-.recipe-thumb img{width:100%;height:100%;object-fit:cover;transform:none}
-.recipe-card .card-body{padding:14px 12px 16px}
+
+.recipe-visual{display:grid;place-items:center;aspect-ratio:1/1;min-height:190px;background:linear-gradient(145deg,#fff0d9,#ffe5ea);overflow:hidden}
+.recipe-emoji{display:block;font-size:clamp(92px,25vw,150px);line-height:1;filter:drop-shadow(0 16px 18px rgba(91,58,28,.16));transform:scale(1.12)}
+@media(max-width:420px){.recipe-visual{min-height:180px}.recipe-emoji{font-size:108px}}
