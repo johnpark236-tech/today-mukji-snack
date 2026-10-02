@@ -10,3 +10,9 @@
 .recipe-visual{display:grid;place-items:center;aspect-ratio:1/1;min-height:190px;background:linear-gradient(145deg,#fff0d9,#ffe5ea);overflow:hidden}
 .recipe-emoji{display:block;font-size:clamp(92px,25vw,150px);line-height:1;filter:drop-shadow(0 16px 18px rgba(91,58,28,.16));transform:scale(1.12)}
 @media(max-width:420px){.recipe-visual{min-height:180px}.recipe-emoji{font-size:108px}}
+
+.voice-mode-row{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.voice-mode-row .voice-primary,.voice-repeat{min-height:62px;border-radius:18px;font-size:17px;font-weight:900}
+.voice-repeat{border:2px solid var(--orange);background:#fff;color:var(--orange-dark)}
+.voice-repeat.active{background:var(--green);border-color:var(--green);color:#fff;box-shadow:0 7px 16px rgba(67,160,71,.20)}
+@media(max-width:370px){.voice-mode-row .voice-primary,.voice-repeat{font-size:15px;padding-inline:8px}}
