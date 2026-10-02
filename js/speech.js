@@ -8,6 +8,8 @@
   let lastText = '';
   let lastAudioUrl = '';
   let playToken = 0;
+  let nativeUtterance = null;
+  let nativeMode = false;
 
   function dispatch() {
     document.dispatchEvent(new CustomEvent('todaycook:speech', {
@@ -97,6 +99,58 @@
     }
   }
 
+  function nativeSupported() {
+    return 'speechSynthesis' in window && 'SpeechSynthesisUtterance' in window;
+  }
+
+  function pickKoreanVoice() {
+    if (!nativeSupported()) return null;
+    const voices = window.speechSynthesis.getVoices();
+    return voices.find(v => /^ko-KR$/i.test(v.lang))
+      || voices.find(v => /^ko/i.test(v.lang))
+      || null;
+  }
+
+  function speakNative(text, token) {
+    if (!nativeSupported()) return false;
+    try {
+      window.speechSynthesis.cancel();
+      nativeMode = true;
+      nativeUtterance = new SpeechSynthesisUtterance(text);
+      nativeUtterance.lang = 'ko-KR';
+      nativeUtterance.rate = 0.94;
+      nativeUtterance.pitch = 1;
+      nativeUtterance.volume = 1;
+      const voice = pickKoreanVoice();
+      if (voice) nativeUtterance.voice = voice;
+      nativeUtterance.onstart = () => { if (token === playToken) setState('playing'); };
+      nativeUtterance.onpause = () => { if (token === playToken) setState('paused'); };
+      nativeUtterance.onresume = () => { if (token === playToken) setState('playing'); };
+      nativeUtterance.onend = () => {
+        if (token !== playToken) return;
+        nativeUtterance = null;
+        nativeMode = false;
+        setState('idle');
+      };
+      nativeUtterance.onerror = event => {
+        if (token !== playToken) return;
+        console.error('TodayCook native TTS error:', event);
+        nativeUtterance = null;
+        nativeMode = false;
+        setState('idle');
+        window.TC.toast('음성 재생을 다시 눌러주세요.');
+      };
+      window.speechSynthesis.speak(nativeUtterance);
+      if (state === 'loading') setState('playing');
+      return true;
+    } catch (error) {
+      console.error('TodayCook native TTS error:', error);
+      nativeUtterance = null;
+      nativeMode = false;
+      return false;
+    }
+  }
+
   function bindAudio(url, token) {
     audio?.pause();
     audio = new Audio(url);
@@ -116,41 +170,60 @@
 
   async function speak(text) {
     const normalized = normalize(text);
-    if (!normalized) return false;
-    const url = endpoint();
-    if (!url || !config.SPEECH_ENABLED) {
-      window.TC.toast('음성 연결을 확인해주세요.');
-      return false;
-    }
+    if (!normalized || !config.SPEECH_ENABLED) return false;
 
     cancel({ keepLast: true });
     const token = ++playToken;
     lastText = normalized;
+    lastAudioUrl = '';
     setState('loading');
+
+    const url = endpoint();
+    if (!url) {
+      if (speakNative(normalized, token)) return true;
+      setState('idle');
+      window.TC.toast('음성 재생을 사용할 수 없어요.');
+      return false;
+    }
+
     try {
       const objectUrl = await requestAudio(normalized);
       if (token !== playToken) return false;
+      nativeMode = false;
       lastAudioUrl = objectUrl;
       bindAudio(objectUrl, token);
       await audio.play();
       return true;
     } catch (error) {
       if (token !== playToken || error?.name === 'AbortError') return false;
-      console.error('TodayCook TTS error:', error);
+      console.warn('Google Cloud TTS unavailable, using device voice:', error);
+      if (speakNative(normalized, token)) return true;
       setState('idle');
-      window.TC.toast('음성 연결을 확인해주세요.');
+      window.TC.toast('음성 재생을 다시 눌러주세요.');
       return false;
     }
   }
 
   function pause() {
-    if (!audio || state !== 'playing') return false;
+    if (state !== 'playing') return false;
+    if (nativeMode && nativeSupported()) {
+      window.speechSynthesis.pause();
+      setState('paused');
+      return true;
+    }
+    if (!audio) return false;
     audio.pause();
     return true;
   }
 
   async function resume() {
-    if (!audio || state !== 'paused') return false;
+    if (state !== 'paused') return false;
+    if (nativeMode && nativeSupported()) {
+      window.speechSynthesis.resume();
+      setState('playing');
+      return true;
+    }
+    if (!audio) return false;
     try {
       await audio.play();
       return true;
@@ -162,7 +235,7 @@
   }
 
   async function replay() {
-    if (!lastAudioUrl) return lastText ? speak(lastText) : false;
+    if (nativeMode || !lastAudioUrl) return lastText ? speak(lastText) : false;
     const token = ++playToken;
     bindAudio(lastAudioUrl, token);
     audio.currentTime = 0;
@@ -171,8 +244,7 @@
       return true;
     } catch (error) {
       console.error('TodayCook TTS replay error:', error);
-      window.TC.toast('음성 재생을 다시 눌러주세요.');
-      return false;
+      return lastText ? speak(lastText) : false;
     }
   }
 
@@ -180,6 +252,9 @@
     playToken += 1;
     requestController?.abort();
     requestController = null;
+    if (nativeSupported()) window.speechSynthesis.cancel();
+    nativeUtterance = null;
+    nativeMode = false;
     if (audio) {
       audio.pause();
       audio.removeAttribute('src');
@@ -208,7 +283,7 @@
   window.addEventListener('hashchange', () => cancel({ keepLast: false }));
   window.addEventListener('pagehide', () => cancel({ keepLast: false }));
   window.TodayCookSpeech = {
-    supported: true,
+    supported: Boolean(endpoint() || nativeSupported()),
     speak,
     pause,
     resume,
