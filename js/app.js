@@ -8,7 +8,20 @@
   let selectedIngredients = new Set();
   let cookStep = 0;
 
-  const recipeCard = recipe => `<a class="recipe-card" href="#/recipe/${recipe.id}"><div class="recipe-thumb recipe-visual" role="img" aria-label="${escapeHtml(recipe.name)}"><span class="recipe-emoji" aria-hidden="true">${escapeHtml(recipe.emoji || "🍽️")}</span></div><div class="card-body"><h3>${escapeHtml(recipe.name)}</h3><div class="card-meta"><span>⏱ ${recipe.timeMinutes}분</span><span>${escapeHtml(recipe.difficulty)}</span></div></div></a>`;
+  const MENU_SPRITE = 'assets/menu/generated-menu-sprite.webp?v=20261003-2';
+  const MENU_SPRITE_COLS = 5;
+  const MENU_SPRITE_MAP = {
+    'french-toast':[0,0], 'tteok-kkochi':[1,0], 'tteokbokki-cup':[2,0], 'ramen-ttang':[3,0], 'egg-bread':[4,0]
+  };
+  const cardVisual = recipe => {
+    const pos = MENU_SPRITE_MAP[recipe.id];
+    if (!pos) return `<div class="recipe-thumb recipe-visual" role="img" aria-label="${escapeHtml(recipe.name)}"><span class="recipe-emoji" aria-hidden="true">${escapeHtml(recipe.emoji || "🍽️")}</span></div>`;
+    const [col] = pos;
+    const x = (col / (MENU_SPRITE_COLS - 1)) * 100;
+    return `<div class="recipe-thumb" style="aspect-ratio:4/3"><span role="img" aria-label="${escapeHtml(recipe.name)}" style="display:block;width:100%;height:100%;background-image:url('${MENU_SPRITE}');background-repeat:no-repeat;background-size:${MENU_SPRITE_COLS*100}% 100%;background-position:${x}% 0"></span></div>`;
+  };
+
+  const recipeCard = recipe => `<a class="recipe-card" href="#/recipe/${recipe.id}">${cardVisual(recipe)}<div class="card-body"><h3>${escapeHtml(recipe.name)}</h3><div class="card-meta"><span>⏱ ${recipe.timeMinutes}분</span><span>${escapeHtml(recipe.difficulty)}</span></div></div></a>`;
 
   function homeView() {
     recommendation ||= recipes[Math.floor(Math.random() * recipes.length)];
